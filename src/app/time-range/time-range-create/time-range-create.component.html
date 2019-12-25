@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Neue Zeitraum anlegen</h1>
+<div mat-dialog-content>
+  <form [formGroup]="newTimeRangeForm" id="newTimeRangeForm" (ngSubmit)="createClicked()">
+    <mat-form-field>
+      <input matInput formControlName="name" placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="from"
+             [matDatepickerFilter]="weekendExcludeFilter"
+             [matDatepicker]="BeginDatePicker"
+             [min]="minDate"
+             (ngModelChange)="startDateChanged($event)"
+             placeholder="Begindatum">
+      <mat-datepicker-toggle matSuffix [for]="BeginDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #BeginDatePicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="to"
+             [matDatepickerFilter]="weekendExcludeFilter"
+             [matDatepicker]="EndDatePicker"
+             [min]="maxDate"
+             (ngModelChange)="endDateChanged($event)"
+             placeholder="Endedatum">
+      <mat-datepicker-toggle matSuffix [for]="EndDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #EndDatePicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="amountOfDays" type="number" placeholder="Anzahl der Tage">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button form="newTimeRangeForm" type="submit" color="primary">Anlegen</button>
+  <button mat-raised-button (click)="cancelClicked()">Abbrechen</button>
+</div>

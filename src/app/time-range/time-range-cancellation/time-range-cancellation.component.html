@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Wollen Sie wirklich den Teitraum von {{data.timeRange.from | date:'dd.MM.yyyy'}}
+  bis {{data.timeRange.to | date:'dd.MM.yyyy'}} stornieren ?</h1>
+<div mat-dialog-content>
+  <form [formGroup]="cancelTimeRangeForm" id="cancelTimeRangeForm" (ngSubmit)="stornierenClicked()">
+    <mat-form-field>
+      <textarea matInput formControlName="reason" placeholder="Grund"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button form="cancelTimeRangeForm" type="submit" color="warn">Stornieren</button>
+  <button mat-raised-button (click)="cancelClicked()">Abbrechen</button>
+</div>

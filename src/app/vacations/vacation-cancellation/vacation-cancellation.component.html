@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Wollen Sie wirklich den Urlaubsantrag von {{data.vacation.from | date:'dd.MM.yyyy'}}
+  bis {{data.vacation.to | date:'dd.MM.yyyy'}} stornieren ?</h1>
+<div mat-dialog-content>
+  <form [formGroup]="cancelVacationForm" id="cancelVacationForm" (ngSubmit)="stornierenClicked()">
+    <mat-form-field style="width: 100%">
+      <textarea matInput formControlName="reason" placeholder="Grund"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button form="cancelVacationForm" type="submit" color="warn">Stornieren</button>
+  <button mat-raised-button (click)="cancelClicked()">Abbrechen</button>
+</div>

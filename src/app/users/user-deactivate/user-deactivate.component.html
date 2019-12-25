@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Wollen Sie wirklich den Benutzer "{{data.firstName}}, {{data.lastName}}" löschen ?</h1>
+<div mat-dialog-content>
+  <form [formGroup]="deactivateUserForm" id="deactivateUserForm" (ngSubmit)="deactivateClicked()">
+    <mat-form-field style="width: 100%">
+      <textarea matInput formControlName="reason" placeholder="Grund"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button form="deactivateUserForm" type="submit" color="warn">Deaktivieren</button>
+  <button mat-raised-button (click)="cancelClicked()">Abbrechen</button>
+</div>

@@ -1,0 +1,451 @@
+{
+  "mjurlaubs": [
+    {
+      "name": "John Smith",
+      "from": "2019-10-01",
+      "to": "2019-10-05",
+      "amountOfDays": "5",
+      "comment": "Urlaub in Monte-Carlo",
+      "status": "Nicht genehmigt"
+    },
+    {
+      "name": "John Johnson",
+      "from": "2019-10-05",
+      "to": "2019-10-10",
+      "amountOfDays": "5",
+      "comment": "Urlaub in Monte-Carlo",
+      "status": "Genehmigt"
+    }
+  ],
+  "time-ranges": [
+    {
+      "name": "Jahresurlaub 2019",
+      "from": "2019-01-01",
+      "to": "2019-12-31",
+      "amountOfDays": "30"
+    },
+    {
+      "name": "Jahresurlaub 2020",
+      "from": "2020-01-01",
+      "to": "2020-12-01",
+      "amountOfDays": "30"
+    }
+  ],
+  "users": [
+    {
+      "id": "8923826d-e2e3-444d-a1c7-ef505a209604",
+      "firstName": "John",
+      "lastName": "Smith"
+    },
+    {
+      "id": "0e6cd9e8-0b75-4d61-b0f3-a99a0529cde0",
+      "firstName": "Sylvester",
+      "lastName": "Stallone"
+    },
+    {
+      "id": "09b7e0b5-9aa3-493f-970e-8f1712a46667",
+      "firstName": "Michael",
+      "lastName": "Jackson"
+    },
+    {
+      "firstName": "Joseph",
+      "lastName": "MacLeod"
+    },
+    {
+      "firstName": "Amy",
+      "lastName": "Baker"
+    },
+    {
+      "firstName": "Alison",
+      "lastName": "Turner"
+    },
+    {
+      "firstName": "Frank",
+      "lastName": "Short"
+    },
+    {
+      "firstName": "Max",
+      "lastName": "Clark"
+    },
+    {
+      "firstName": "Jessica",
+      "lastName": "Quinn"
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "North"
+    },
+    {
+      "firstName": "Nicholas",
+      "lastName": "Morgan"
+    },
+    {
+      "firstName": "Chloe",
+      "lastName": "Jackson"
+    },
+    {
+      "firstName": "Edward",
+      "lastName": "Reid"
+    },
+    {
+      "firstName": "Blake",
+      "lastName": "Marshall"
+    },
+    {
+      "firstName": "Trevor",
+      "lastName": "Kelly"
+    },
+    {
+      "firstName": "Victoria",
+      "lastName": "May"
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Nash"
+    },
+    {
+      "firstName": "Evan",
+      "lastName": "Scott"
+    },
+    {
+      "firstName": "Stewart",
+      "lastName": "Ogden"
+    },
+    {
+      "firstName": "Ruth",
+      "lastName": "Cornish"
+    },
+    {
+      "firstName": "Benjamin",
+      "lastName": "Bower"
+    },
+    {
+      "firstName": "Ava",
+      "lastName": "Harris"
+    },
+    {
+      "firstName": "Faith",
+      "lastName": "Payne"
+    },
+    {
+      "firstName": "Lillian",
+      "lastName": "Miller"
+    },
+    {
+      "firstName": "Matt",
+      "lastName": "Short"
+    },
+    {
+      "firstName": "Sally",
+      "lastName": "Bell"
+    },
+    {
+      "firstName": "Amanda",
+      "lastName": "Ellison"
+    },
+    {
+      "firstName": "William",
+      "lastName": "King"
+    },
+    {
+      "firstName": "Evan",
+      "lastName": "Ferguson"
+    },
+    {
+      "firstName": "Rose",
+      "lastName": "Turner"
+    },
+    {
+      "firstName": "Lucas",
+      "lastName": "Quinn"
+    },
+    {
+      "firstName": "Rachel",
+      "lastName": "Powell"
+    },
+    {
+      "firstName": "Sally",
+      "lastName": "Miller"
+    },
+    {
+      "firstName": "Lillian",
+      "lastName": "Reid"
+    },
+    {
+      "firstName": "Brian",
+      "lastName": "Clark"
+    },
+    {
+      "firstName": "Diane",
+      "lastName": "Terry"
+    },
+    {
+      "firstName": "Brandon",
+      "lastName": "Hardacre"
+    },
+    {
+      "firstName": "Sue",
+      "lastName": "Sharp"
+    },
+    {
+      "firstName": "Claire",
+      "lastName": "Walsh"
+    },
+    {
+      "firstName": "Anna",
+      "lastName": "Forsyth"
+    },
+    {
+      "firstName": "Sebastian",
+      "lastName": "Randall"
+    },
+    {
+      "firstName": "Sebastian",
+      "lastName": "Baker"
+    },
+    {
+      "firstName": "Dorothy",
+      "lastName": "Forsyth"
+    },
+    {
+      "firstName": "Elizabeth",
+      "lastName": "Randall"
+    },
+    {
+      "firstName": "Katherine",
+      "lastName": "Skinner"
+    },
+    {
+      "firstName": "Simon",
+      "lastName": "Black"
+    },
+    {
+      "firstName": "Carol",
+      "lastName": "Lambert"
+    },
+    {
+      "firstName": "Dominic",
+      "lastName": "Robertson"
+    },
+    {
+      "firstName": "Dylan",
+      "lastName": "Henderson"
+    },
+    {
+      "firstName": "Diana",
+      "lastName": "Davies"
+    },
+    {
+      "firstName": "Steven",
+      "lastName": "Smith"
+    },
+    {
+      "firstName": "Lillian",
+      "lastName": "Ince"
+    },
+    {
+      "firstName": "Sean",
+      "lastName": "Cornish"
+    },
+    {
+      "firstName": "Grace",
+      "lastName": "Ogden"
+    },
+    {
+      "firstName": "Owen",
+      "lastName": "Parsons"
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Rampling"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Alsop"
+    },
+    {
+      "firstName": "Christian",
+      "lastName": "Duncan"
+    },
+    {
+      "firstName": "James",
+      "lastName": "Greene"
+    },
+    {
+      "firstName": "Una",
+      "lastName": "Powell"
+    },
+    {
+      "firstName": "Dan",
+      "lastName": "Cameron"
+    },
+    {
+      "firstName": "Luke",
+      "lastName": "Welch"
+    },
+    {
+      "firstName": "Stewart",
+      "lastName": "Ross"
+    },
+    {
+      "firstName": "Sue",
+      "lastName": "Underwood"
+    },
+    {
+      "firstName": "Anthony",
+      "lastName": "Martin"
+    },
+    {
+      "firstName": "Leonard",
+      "lastName": "Hardacre"
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "MacDonald"
+    },
+    {
+      "firstName": "Phil",
+      "lastName": "Pullman"
+    },
+    {
+      "firstName": "Colin",
+      "lastName": "Henderson"
+    },
+    {
+      "firstName": "Alexandra",
+      "lastName": "Hughes"
+    },
+    {
+      "firstName": "Sue",
+      "lastName": "Dyer"
+    },
+    {
+      "firstName": "Christopher",
+      "lastName": "Sutherland"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Henderson"
+    },
+    {
+      "firstName": "Colin",
+      "lastName": "Jones"
+    },
+    {
+      "firstName": "Stephen",
+      "lastName": "Greene"
+    },
+    {
+      "firstName": "Victor",
+      "lastName": "Wright"
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "Turner"
+    },
+    {
+      "firstName": "Justin",
+      "lastName": "Pullman"
+    },
+    {
+      "firstName": "Joanne",
+      "lastName": "Davies"
+    },
+    {
+      "firstName": "Claire",
+      "lastName": "McLean"
+    },
+    {
+      "firstName": "Joseph",
+      "lastName": "Arnold"
+    },
+    {
+      "firstName": "Colin",
+      "lastName": "Newman"
+    },
+    {
+      "firstName": "Theresa",
+      "lastName": "Campbell"
+    },
+    {
+      "firstName": "Alan",
+      "lastName": "Carr"
+    },
+    {
+      "firstName": "Jacob",
+      "lastName": "Randall"
+    },
+    {
+      "firstName": "Isaac",
+      "lastName": "Rutherford"
+    },
+    {
+      "firstName": "Sophie",
+      "lastName": "Coleman"
+    },
+    {
+      "firstName": "Boris",
+      "lastName": "Powell"
+    },
+    {
+      "firstName": "Christian",
+      "lastName": "Reid"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Roberts"
+    },
+    {
+      "firstName": "Benjamin",
+      "lastName": "Ince"
+    },
+    {
+      "firstName": "Richard",
+      "lastName": "Kelly"
+    },
+    {
+      "firstName": "Phil",
+      "lastName": "Ellison"
+    },
+    {
+      "firstName": "Harry",
+      "lastName": "Sanderson"
+    },
+    {
+      "firstName": "Paul",
+      "lastName": "Ince"
+    },
+    {
+      "firstName": "Christopher",
+      "lastName": "Kerr"
+    },
+    {
+      "firstName": "Dorothy",
+      "lastName": "Vaughan"
+    },
+    {
+      "firstName": "Una",
+      "lastName": "Springer"
+    },
+    {
+      "firstName": "Christopher",
+      "lastName": "Arnold"
+    },
+    {
+      "firstName": "Ryan",
+      "lastName": "Chapman"
+    },
+    {
+      "firstName": "Stewart",
+      "lastName": "Miller"
+    },
+    {
+      "firstName": "Jan",
+      "lastName": "Wallace"
+    },
+    {
+      "firstName": "Cameron",
+      "lastName": "Howard"
+    }
+  ]
+}

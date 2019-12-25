@@ -1,0 +1,73 @@
+<div style="padding: 1em;">
+  <div fxLayout="row" style="padding-bottom: 1em;width: 100%">
+    <button mat-raised-button color="primary" style="margin-right: 0.5em" (click)="backClicked()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div fxLayoutAlign="center center" style="font-size: large;width: 100%">
+      {{ user | async | lastComaFirstName }}
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="createTimeRangeDialog()">Zeitraum anlegen</button>
+    </div>
+  </div>
+
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No.</th>
+      <td mat-cell *matCellDef="let i = index" style="width: 3em">{{ i + 1 }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">
+        <div style="cursor: pointer" (click)="openTimeRange(element)">{{element.name}}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="from">
+      <th mat-header-cell *matHeaderCellDef>Von</th>
+      <td mat-cell *matCellDef="let element"> {{element.from | date:'dd.MM.yyyy'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="to">
+      <th mat-header-cell *matHeaderCellDef>Bis</th>
+      <td mat-cell *matCellDef="let element"> {{element.to | date:'dd.MM.yyyy'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="amountOfDays">
+      <th mat-header-cell *matHeaderCellDef>Tage</th>
+      <td mat-cell *matCellDef="let element"> {{element.amountOfDays}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="applicationsAmount">
+      <th mat-header-cell *matHeaderCellDef>Anträge</th>
+      <td mat-cell *matCellDef="let element"> {{element.applicationsAmount}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="restAmountOfDays">
+      <th mat-header-cell *matHeaderCellDef>Tage (Rest)</th>
+      <td mat-cell *matCellDef="let element"> {{element.restAmountOfDays}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef>Status</th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Action</th>
+      <td mat-cell *matCellDef="let element" class="action-link" style="width: 3em">
+        <button (click)="cancelTimeRange(element)" mat-raised-button color="warn">
+          <mat-icon>cancel</mat-icon>
+          Stornieren
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsTimeRanges"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsTimeRanges;"></tr>
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
